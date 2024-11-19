@@ -3,3 +3,7 @@ streamlit
 openai
 PyPDF2
 python-dotenv
+SpeechRecognition
+wavio
+pyaudio
+openai-whisper
