@@ -34,8 +34,9 @@ def get_groq_chat_response(question, model="gemma2-9b-it"):
         return None
 
 # Streamlit app UI
-st.title("Oyondi Interview Assistant")
-st.write("Record your question, and get an immediate response!")
+st.title("Real-Time Interview Assistant")
+st.text("Developed by Joe Oyondi")
+st.write("Record your question, and get an immediate response with help of AI!")
 
 # Automatically record and transcribe
 st.info("Click the button below to record your question.")
@@ -48,7 +49,7 @@ if st.button("Record and Get Response"):
         st.success("Recording complete! Transcription in progress...")
         
         # Display the transcribed question
-        st.subheader("Transcribed Question:")
+        st.subheader("Question:")
         st.write(question)
 
         # Fetch response from the Groq API

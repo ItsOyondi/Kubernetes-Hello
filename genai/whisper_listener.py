@@ -11,7 +11,7 @@ RATE = 16000  # Sample rate for Whisper compatibility
 CHUNK = 1024  # Buffer size
 OUTPUT_FILENAME = "outputs/recorded_audio.wav"
 RECORD_DURATION = 18 
-SILENCE_THRESHOLD = 1000  # Silence threshold to determine speech presence
+SILENCE_THRESHOLD = 1000  # Silence threshold to determine speech peresence
 
 # Initialize the Whisper model
 model = whisper.load_model("base")  # You can choose a different model, like "small", "medium", etc.
